@@ -1,13 +1,13 @@
 public class Trade {
-    private String type; // "BUY" or "SELL"
+    private TradeType type;
     private int quantity;
 
-    public Trade(String type, int quantity) {
+    public Trade(TradeType type, int quantity) {
         this.type = type;
         this.quantity = quantity;
     }
 
-    public String getType() {
+    public TradeType getType() {
         return type;
     }
 

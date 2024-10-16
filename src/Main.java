@@ -12,10 +12,10 @@ public class Main {
 
         // Execute trade based on signal
         if ("BUY".equals(signal)) {
-            Trade trade = new Trade("BUY", 100); // Buy 100 units
+            Trade trade = new Trade(TradeType.BUY, 100); // Buy 100 units
             portfolio.executeTrade(trade);
         }else if ("SELL".equals(signal)) {
-            Trade trade = new Trade("SELL", 100); // Sell 100 units
+            Trade trade = new Trade(TradeType.SELL, 100); // Sell 100 units
             portfolio.executeTrade(trade);
         }
 
